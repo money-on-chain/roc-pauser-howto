@@ -113,12 +113,8 @@ process existing queued operations only after the buckets can execute them.
 
 ## Appendix: run the mainnet fork test
 
-The test in [`test/RoCPauserFork.t.sol`](test/RoCPauserFork.t.sol) uses only
-Foundry's `forge` and `anvil`, Solidity interfaces declared in the test, the
-deployed Safe and its deployed `MultiSendCallOnly`. It has no npm, Solidity
-library, or `forge-std` dependency. Tested with **Foundry v1.9.0** against
-Rootstock Mainnet block `9400049` on the public RPC
-`https://public-node.rsk.co`. Use an up-to-date stable Foundry installation.
+The test in [`test/RoCPauserFork.t.sol`](test/RoCPauserFork.t.sol) uses 
+Foundry's `forge` and `anvil`, exercising the pause and un-pause on a mainnet fork.
 
 In terminal 1, start a local fork:
 
