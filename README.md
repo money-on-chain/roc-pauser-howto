@@ -27,9 +27,6 @@ show what each pause controls.
 
 **Network:** Rootstock Mainnet, chain ID `30`.
 **Safe:** `0x817aC952d616c1e2Fa5c6D6DD20b3D15f10dDb03`.
-At the fork block used for this guide (`9400049`), the Safe was version `1.4.1`,
-had nine owners, and required four approvals. Check the owners and threshold in
-Safe again before proposing a live transaction.
 
 ## ABI and Safe transaction settings
 
@@ -127,14 +124,12 @@ Rootstock Mainnet block `9400049` on the public RPC
 In terminal 1, start a local fork:
 
 ```bash
-cd /work/moc/pauser-howto
 anvil --fork-url https://public-node.rsk.co --chain-id 30 --port 18545
 ```
 
 In terminal 2, run the test against that local fork:
 
 ```bash
-cd /work/moc/pauser-howto
 forge test --fork-url http://127.0.0.1:18545 -vv
 ```
 
