@@ -1,8 +1,7 @@
 # Pause and resume RIF on Chain with the RoC Safe
 
 This guide prepares **one five-call Safe transaction** to pause RoC on Rootstock
-Mainnet, and a second five-call transaction to resume it. Use the **proxy
-addresses**, not implementation or changer addresses.
+Mainnet, and a second five-call transaction to resume it.
 
 | Contract | Proxy address | Effect of its own `pause()` |
 | --- | --- | --- |
